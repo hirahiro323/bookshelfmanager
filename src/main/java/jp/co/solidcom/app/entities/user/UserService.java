@@ -14,19 +14,19 @@ public class UserService {
 	@Autowired
 	UserRepository repository;
 
-	public List<User> findAll() {
+	public List<ApplicationUser> findAll() {
 		return repository.findAll();
 	}
 
-	public Optional<User> findOne(String userId) {
+	public Optional<ApplicationUser> findOne(String userId) {
 		return repository.findById(userId);
 	}
 
-	public User update(User user) {
+	public ApplicationUser update(ApplicationUser user) {
 		return repository.save(user);
 	}
 
-	public User create(User user) {
+	public ApplicationUser create(ApplicationUser user) {
 		return repository.save(user);
 	}
 

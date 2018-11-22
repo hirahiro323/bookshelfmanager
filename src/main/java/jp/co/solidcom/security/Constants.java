@@ -9,4 +9,6 @@ public class Constants {
 	public static final String LOGIN_URL = "/user/login";
 	public static final String LOGIN_ID = "userId";
 	public static final String PASSWORD = "password";
+    public static final long ACCESS_TOKEN_VALIDITY_SECONDS = 5*60*60;
+    public static final String SIGNING_KEY = "devglan123r";
 }

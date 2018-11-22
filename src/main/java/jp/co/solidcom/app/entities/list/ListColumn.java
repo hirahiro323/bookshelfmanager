@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import jp.co.solidcom.app.entities.user.User;
+import jp.co.solidcom.app.entities.user.ApplicationUser;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -47,6 +47,6 @@ public class ListColumn {
 	@JsonIgnore
 	@ManyToOne(optional = false)
 	@JoinColumn(name = "rentaling_user_id", referencedColumnName = "user_id", insertable = false, updatable = false)
-	private User user;
+	private ApplicationUser user;
 
 }
